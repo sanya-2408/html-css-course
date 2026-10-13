@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
+        <button class="icon-button" aria-label="Відкрити меню">☰</button>
+        <a class="brand" href="#"><span class="brand-icon">▶</span><strong>YouTube</strong><sup>UA</sup></a>
+    </div>
+    <div class="header-center">
+        <form class="search" role="search">
+            <input aria-label="Пошук" placeholder="Пошук" type="search">
+            <button aria-label="Знайти" type="submit">⌕</button>
+        </form>
+        <button class="icon-button mic" aria-label="Голосовий пошук"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4M8 22h8"/></svg></button>
+    </div>
+    <div class="header-right">
+        <button class="icon-button" aria-label="Створити"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="14" height="13" rx="2"/><path d="m16.5 10 5-3v10l-5-3M9.5 9v6M6.5 12h6"/></svg></button>
+        <button class="icon-button" aria-label="Сповіщення"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg></button>
+        <button class="avatar" aria-label="Профіль">B</button>
+    </div>
+</header>
+<div class="layout">
+    <aside class="sidebar">
+        <nav class="nav-group">
+            <a class="active" href="#">⌂ <span>Головна</span></a>
+            <a href="#">▣ <span>YouTube Shorts</span></a>
+            <a href="#">▤ <span>Підписки</span></a>
+            <a href="#">◎ <span>YouTube Music</span></a>
+        </nav>
+        <nav class="nav-group">
+            <h3>Ви ›</h3>
+            <a href="#">▣ <span>Ваш канал</span></a>
+            <a href="#">◷ <span>Історія</span></a>
+            <a href="#">▹ <span>Ваші відео</span></a>
+            <a href="#">◷ <span>Переглянути пізніше</span></a>
+            <a href="#">↓ <span>Завантаження</span></a>
+            <a href="#">⌄ <span>Показати більше</span></a>
+        </nav>
+        <nav class="nav-group">
+            <h3>Підписки</h3>
+            <a href="#"><span class="channel-icon">🌐</span><span>Was: Популярн...</span></a>
+            <a href="#"><span class="channel-icon">🎮</span><span>Піксель</span></a>
+            <a href="#"><span class="channel-icon">🎬</span><span>ROZETKA GAME</span></a>
+            <a href="#"><span class="channel-icon">🎧</span><span>Музика</span></a>
+            <a href="#">⌄ <span>Показати ще 24</span></a>
+        </nav>
+    </aside>
+    <main class="main">
+        <div class="categories">
+            <button class="selected">Усі</button><button>Ігри</button><button>Музика</button><button>Прямі трансляції</button><button>Новини</button><button>Пригодницькі бойовики</button><button>Мультфільми</button><button>Нещодавно завантажені</button>
+        </div>
+        <section class="videos" aria-label="Рекомендовані відео">
+            <article class="video-card">
+                <img class="video-thumbnail" src="images/video-1.jpg" alt="Аватар: Легенда про Аанга — добірка моментів">
+                <div class="video-details">
+                    <div class="video-channel-avatar">N</div>
+                    <div>
+                        <h2 class="video-title">Аватар: Легенда про Аанга — добірка моментів</h2>
+                        <p class="video-meta">Nickelodeon</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <img class="video-thumbnail" src="images/video-2.jpg" alt="Docker — курс українською">
+                <div class="video-details">
+                    <div class="video-channel-avatar">c</div>
+                    <div>
+                        <h2 class="video-title">Docker — курс українською</h2>
+                        <p class="video-meta">codeUA / ITVDN</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <img class="video-thumbnail" src="images/video-3.jpg" alt="C++ Full Course — 6 Hours">
+                <div class="video-details">
+                    <div class="video-channel-avatar">P</div>
+                    <div>
+                        <h2 class="video-title">C++ Full Course — 6 Hours</h2>
+                        <p class="video-meta">C++ Programming</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <img class="video-thumbnail" src="images/video-4.jpg" alt="Як заробити 10 000 $ на YouTube">
+                <div class="video-details">
+                    <div class="video-channel-avatar">C</div>
+                    <div>
+                        <h2 class="video-title">Як заробити 10 000 $ на YouTube</h2>
+                        <p class="video-meta">YouTube Creator</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <img class="video-thumbnail" src="images/video-5.jpg" alt="Губка Боб і Сквідвард — смішні моменти">
+                <div class="video-details">
+                    <div class="video-channel-avatar">N</div>
+                    <div>
+                        <h2 class="video-title">Губка Боб і Сквідвард — смішні моменти</h2>
+                        <p class="video-meta">Nickelodeon</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <img class="video-thumbnail" src="images/video-6.jpg" alt="Вивчення CSS для початківців — урок №2">
+                <div class="video-details">
+                    <div class="video-channel-avatar">W</div>
+                    <div>
+                        <h2 class="video-title">Вивчення CSS для початківців — урок №2</h2>
+                        <p class="video-meta">CSS для початківців</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <img class="video-thumbnail" src="images/video-7.jpg" alt="Ей, лузер! — смішне відео">
+                <div class="video-details">
+                    <div class="video-channel-avatar">E</div>
+                    <div>
+                        <h2 class="video-title">Ей, лузер! — смішне відео</h2>
+                        <p class="video-meta">Сміхота TV</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <img class="video-thumbnail" src="images/video-8.jpg" alt="MrBeast — DAY 201">
+                <div class="video-details">
+                    <div class="video-channel-avatar">C</div>
+                    <div>
+                        <h2 class="video-title">MrBeast — DAY 201</h2>
+                        <p class="video-meta">MrBeast</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</div>
+</body>
+</html>
