@@ -1,0 +1,170 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-areas:
+        "func top  lights"
+        "main nav  numpad";
+    gap: 18px 30px;
+    width: max-content;
+    margin: 30px auto;
+    padding: 20px 25px 25px;
+    background-color: #c8c8c8;
+    border: 2px solid #999;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.func {
+    grid-area: func;
+    display: grid;
+    grid-template-columns: repeat(30, 20px);
+    grid-template-rows: 44px;
+    gap: 6px;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(30, 20px);
+    grid-template-rows: repeat(5, 44px);
+    gap: 6px;
+}
+
+.top {
+    grid-area: top;
+    display: grid;
+    grid-template-columns: repeat(3, 46px);
+    grid-template-rows: 44px;
+    gap: 6px;
+}
+
+.nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(3, 46px);
+    grid-template-rows: repeat(5, 44px);
+    gap: 6px;
+}
+
+.numpad {
+    grid-area: numpad;
+    display: grid;
+    grid-template-columns: repeat(4, 46px);
+    grid-template-rows: repeat(5, 44px);
+    gap: 6px;
+}
+
+.lights {
+    grid-area: lights;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+
+.light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lamp {
+    width: 10px;
+    height: 10px;
+    margin-top: 3px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.lamp.on {
+    background-color: #f5c400;
+    box-shadow: 0 0 6px #f5c400;
+}
+
+.key {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3px 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    color: #222;
+    background-color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    box-shadow: 2px 3px 0 #888;
+    cursor: pointer;
+}
+
+.top .key,
+.nav .key,
+.numpad .key {
+    grid-column: span 1;
+}
+
+.key:hover {
+    background-color: #e6efff;
+}
+
+.key:active {
+    background-color: #cfdcf5;
+    box-shadow: none;
+    transform: translate(2px, 3px);
+}
+
+.key:focus {
+    outline: 2px solid #3a7bff;
+}
+
+.space1 { grid-column: span 1; }
+.space2 { grid-column: span 2; }
+
+.w3 { grid-column: span 3; }
+.w4 { grid-column: span 4; }
+.w5 { grid-column: span 5; }
+.w12 { grid-column: span 12; }
+
+.enter {
+    grid-row: span 2;
+}
+
+.nav .up    { grid-column: 2; grid-row: 4; }
+.nav .left  { grid-column: 1; grid-row: 5; }
+.nav .down  { grid-column: 2; grid-row: 5; }
+.nav .right { grid-column: 3; grid-row: 5; }
+
+.tall {
+    grid-row: span 2;
+}
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+ul a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul a:hover {
+    color: #777;
+    text-decoration: underline;
+}
+
+.numpad .zero {
+    grid-column: span 2;
+}
