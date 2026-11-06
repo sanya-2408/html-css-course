@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    color: #21243D;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #FF6464;
+}
+
+.hero {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FF6464;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.hero-photo img {
+    width: 246px;
+    height: 246px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.practical-section {
+    background-color: #EDF7FA;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.practical-section h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: calc(50% - 10px);
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.card h3 a:hover {
+    color: #FF6464;
+}
+
+.card .date {
+    color: #8695A4;
+    margin-bottom: 8px;
+}
+
+#laboratory {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+#laboratory h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.lab-item {
+    display: flex;
+    gap: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.lab-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 246px;
+    min-width: 246px;
+    height: 180px;
+    border-radius: 4px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.lab-item h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.lab-item h3 a:hover {
+    color: #FF6464;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #142850;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 16px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    font-size: 18px;
+}
+
+.footer-links a:hover {
+    color: #FF6464;
+}
+
+footer p {
+    font-size: 14px;
+    color: #8695A4;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-photo img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .lab-item {
+        flex-direction: column;
+    }
+
+    .lab-thumb {
+        width: 100%;
+        min-width: auto;
+    }
+}

@@ -2,108 +2,132 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Особистий веб-сайт Мимохода Олександра</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header id="home">
-    <h1>Особистий веб-сайт Мимохода Олександра</h1>
-    <nav>
-        <ul>
-            <li><a href="#home">Головна</a></li>
-            <li><a href="#about">Про мене</a></li>
-            <li><a href="#practical">Практичні роботи</a></li>
-            <li><a href="#laboratory">Лабораторні заняття</a></li>
-        </ul>
-    </nav>
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="#about">Про мене</a>
+            <a href="#practical">Практичні</a>
+            <a href="#laboratory">Лабораторні</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </div>
 </header>
 
-<main>
-
-    <section id="about">
-        <h2>Про мене</h2>
-        <img src="PR1/images/photo.jpg" alt="Фото" width="200">
-        <p>
-            <strong>Ім'я:</strong> Мимоход Олександр
-        </p>
-        <p>
-            <strong>Група:</strong> ТЦР-22/ІПЗ-22
-        </p>
-        <p>
-            <strong>Спеціальність:</strong> F2 ІПЗ
-        </p>
-        <p>
-            <strong>Контакти:</strong>
-            svooao@gmail.com
-        </p>
-    </section>
+<section id="about" class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Привіт, я Олександр,<br>студент ІПЗ</h1>
+            <p>Мимоход Олександр, група ТЦР-22/ІПЗ-22, спеціальність F2 ІПЗ.
+                Тут зібрані мої практичні та лабораторні роботи з веб-розробки.</p>
+            <a href="mailto:svooao@gmail.com" class="btn">Написати мені</a>
+        </div>
+        <div class="hero-photo">
+            <img src="PR1/images/photo.jpg" alt="Моє фото" width="246" height="246">
+        </div>
+    </div>
+</section>
 
 
-    <section id="practical">
+<section id="practical" class="practical-section">
+    <div class="container">
         <h2>Практичні роботи</h2>
-        <ul>
-            <li>
-                <a href="PR1/practical1.html">
-                    Практична робота 1
-                </a>
-            </li>
-            <li>
-                <a href="LAB1/lab1.html">
-                    Практична робота 2
-                </a>
-            </li>
-            <li>
-                <a href="LAB3/lab3.html">
-                    Практична робота 3
-                </a>
-            </li>
-            <li>
-                <a href="PR4/PR4.html">
-                    Практична робота 4
-                </a>
-            </li>
-        </ul>
-    </section>
-    <section id="laboratory">
-        <h2>Лабораторні заняття</h2>
-        <ul>
-            <li>
-                <a href="LAB1/lab1.html">
-                    Лабораторна робота 1
-                </a>
-            </li>
-            <li>
-                <a href="LAB2/lab2.html">
-                    Лабораторна робота 2
-                </a>
-            </li>
-            <li>
-                <a href="LAB3/lab3.html">
-                    Лабораторна робота 3
-                </a>
-            </li>
-            <li>
-                <a href="LAB4/LAB4.html">
-                    Лабораторна робота 4
-                </a>
-            </li>
-        </ul>
-    </section>
+        <div class="cards">
+            <div class="card">
+                <h3><a href="PR1/practical1.html">Практична робота 1</a></h3>
+                <p class="date">2025 | HTML</p>
+                <p>Перша практична робота курсу.</p>
+            </div>
+            <div class="card">
+                <h3><a href="LAB1/lab1.html">Практична робота 2</a></h3>
+                <p class="date">2025 | HTML</p>
+                <p>Друга практична робота курсу.</p>
+            </div>
+            <div class="card">
+                <h3><a href="LAB3/lab3.html">Практична робота 3</a></h3>
+                <p class="date">2025 | HTML, CSS</p>
+                <p>Третя практична робота курсу.</p>
+            </div>
+            <div class="card">
+                <h3><a href="PR4/PR4.html">Практична робота 4</a></h3>
+                <p class="date">2025 | HTML, CSS</p>
+                <p>Четверта практична робота курсу.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-</main>
 
-<footer>
-    <hr>
-    <p>
-        Контакти: svooao@gmail.com |
-        Соціальні мережі:
-        <a href="https://web.telegram.org/a/#528684015" target="_blank">Telegram</a> |
-        <a href="https://github.com/sanya-2408" target="_blank">GitHub</a>
-    </p>
-    <p>
-        Роки навчання: 2025-2029
-    </p>
+<section id="laboratory">
+    <div class="container">
+        <h2>Лабораторні роботи</h2>
+
+        <div class="lab-item">
+            <a href="LAB1/lab1.html" class="lab-thumb" style="background: linear-gradient(135deg, #FF6464, #FFB86B);">
+                LAB 1
+            </a>
+            <div>
+                <h3><a href="LAB1/lab1.html">Лабораторна робота 1</a></h3>
+                <p><span class="badge">2025</span> HTML</p>
+                <p>Структура HTML-сторінки.</p>
+            </div>
+        </div>
+
+        <div class="lab-item">
+            <a href="LAB2/lab2.html" class="lab-thumb" style="background: linear-gradient(135deg, #142850, #00A8CC);">
+                LAB 2
+            </a>
+            <div>
+                <h3><a href="LAB2/lab2.html">Лабораторна робота 2</a></h3>
+                <p><span class="badge">2025</span> HTML</p>
+                <p>Друга лабораторна робота.</p>
+            </div>
+        </div>
+
+        <div class="lab-item">
+            <a href="LAB3/lab3.html" class="lab-thumb" style="background: linear-gradient(135deg, #21243D, #8695A4);">
+                LAB 3
+            </a>
+            <div>
+                <h3><a href="LAB3/lab3.html">Лабораторна робота 3</a></h3>
+                <p><span class="badge">2025</span> HTML, CSS</p>
+                <p>Третя лабораторна робота.</p>
+            </div>
+        </div>
+
+        <div class="lab-item">
+            <a href="LAB4/LAB4.html" class="lab-thumb" style="background: linear-gradient(135deg, #00A8CC, #A3E4D7);">
+                LAB 4
+            </a>
+            <div>
+                <h3><a href="LAB4/LAB4.html">Лабораторна робота 4</a></h3>
+                <p><span class="badge">2025</span> HTML, CSS</p>
+                <p>Четверта лабораторна робота.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contacts">
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://web.telegram.org/a/#528684015" target="_blank">Telegram</a>
+            <a href="https://github.com/sanya-2408" target="_blank">GitHub</a>
+            <a href="mailto:svooao@gmail.com">Email</a>
+        </div>
+        <p>svooao@gmail.com</p>
+        <p>Роки навчання: 2025-2029</p>
+    </div>
 </footer>
+
 </body>
 </html>
