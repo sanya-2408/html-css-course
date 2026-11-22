@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: transparent;
+    overflow: hidden;
+}
+
+.scene {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+
+.pokeball {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 0;
+    top: 250px;
+    z-index: 2;
+
+    animation: throwBall 2.5s ease-in-out forwards;
+}
+
+.pokeball img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.flash {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 225px;
+    top: 120px;
+
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 60px 30px white;
+
+    opacity: 0;
+    z-index: 3;
+
+    animation: flash 1s ease-out 2s;
+}
+
+.pokemon {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+
+    left: 190px;
+    top: 80px;
+
+    opacity: 0;
+    z-index: 4;
+
+    animation: appear 1.2s ease-out 2.4s forwards;
+}
+
+.pokemon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    animation: fly 2s ease-in-out 3.6s infinite;
+}
+
+@keyframes throwBall {
+    0% {
+        transform: translate(-120px, 100px) rotate(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(270px, -100px) rotate(360deg);
+    }
+
+    75% {
+        transform: translate(270px, -70px) rotate(540deg);
+    }
+
+    100% {
+        transform: translate(270px, -70px) rotate(720deg) scale(0.5);
+        opacity: 0;
+    }
+}
+
+.flash {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 250px;
+    top: 140px;
+
+    border-radius: 50%;
+    background: white;
+    box-shadow:
+            0 0 30px 20px white,
+            0 0 70px 50px #80eaff,
+            0 0 120px 80px #ffffff;
+
+    opacity: 0;
+    z-index: 10;
+
+    animation: flash 1.2s ease-out 2s forwards;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    15% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    40% {
+        opacity: 1;
+        transform: scale(2.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(4);
+    }
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.1) translateY(100px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.3) translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+@keyframes fly {
+    0%, 100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-25px) rotate(3deg);
+    }
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: color 0.2s;
+}
+
+li a:hover {
+    color: #e63946;
+}
