@@ -207,3 +207,113 @@ footer p {
     color: #8695A4;
     margin-top: 5px;
 }
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .hero-content {
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .lab-thumb {
+        width: 200px;
+        min-width: 200px;
+        height: 150px;
+    }
+
+    .lab-item h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 0;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    .hero-photo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .practical-section,
+    #laboratory {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card h3 {
+        font-size: 21px;
+    }
+
+    .lab-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .lab-thumb {
+        width: 100%;
+        min-width: 0;
+        height: 160px;
+    }
+
+    .lab-item h3 {
+        font-size: 22px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+}
