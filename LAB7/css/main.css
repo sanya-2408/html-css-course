@@ -1,0 +1,116 @@
+.page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #0f1e3d;
+}
+.page__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #1b2d57;
+  border: 2px solid #f2c14e;
+  border-radius: 10px;
+}
+.card__title {
+  margin: 0 0 20px;
+  font-family: Georgia, serif;
+  font-size: 42px;
+}
+.card__year {
+  color: #d62828;
+}
+.card__text {
+  max-width: 400px;
+  line-height: 1.5;
+}
+.card__author {
+  font-style: italic;
+  color: #f2c14e;
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tree__star {
+  font-size: 36px;
+  color: #f2c14e;
+}
+.tree__part {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 70px solid #2a9d5c;
+}
+.tree__part--big {
+  margin-top: -30px;
+  border-left-width: 90px;
+  border-right-width: 90px;
+  border-bottom-width: 90px;
+}
+.tree__trunk {
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+}
+
+.wishes {
+  margin-top: 40px;
+}
+.wishes__title {
+  font-family: Georgia, serif;
+  text-align: center;
+}
+.wishes__list {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+.wishes__item {
+  flex: 1;
+  padding: 20px;
+  background-color: #1b2d57;
+  border-radius: 10px;
+  border-left: 4px solid #d62828;
+}
+.wishes__item--gold {
+  border-left-color: #f2c14e;
+}
+.wishes__item--green {
+  border-left-color: #2a9d5c;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #f2c14e;
+}
+li {
+  list-style: none;
+}
+
+li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: color 0.2s;
+}
+
+li a:hover {
+  color: #e63946;
+}

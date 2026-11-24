@@ -1,0 +1,31 @@
+.wishes {
+  margin-top: 40px;
+
+  &__title {
+    font-family: $font-title;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: $padding;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    flex: 1;
+    padding: $padding;
+    background-color: $card-color;
+    border-radius: $radius;
+    border-left: 4px solid $red;
+
+    &--gold {
+      border-left-color: $gold;
+    }
+
+    &--green {
+      border-left-color: $green;
+    }
+  }
+}

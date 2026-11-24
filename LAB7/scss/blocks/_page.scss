@@ -1,0 +1,12 @@
+.page {
+  margin: 0;
+  font-family: $font;
+  color: $text-color;
+  background-color: $bg-color;
+
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: $padding;
+  }
+}
